@@ -72,7 +72,7 @@ App.fetchRepositories = (username) => {
             const repoLi = $('<li class="repoLi"></li>')
 
             const repoName = $(`<div class='repoName'>${repo.name}</div>`);
-            const repoUrl = $(`<a class='repoUrl' href="${repo.url}">Link</a>`);
+            const repoUrl = $(`<a class='repoUrl' href="${repo.svn_url}">Link</a>`);
             const repoLangs = $(`<div class='repoLangs'>${repo.language}</div>`)
 
             repoLi.append(repoName);
